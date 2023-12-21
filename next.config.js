@@ -37,4 +37,12 @@ module.exports = {
     ],
   },
   reactStrictMode: true,
+  async rewrites() {
+    return [
+      {
+        source: "/9d14be61-2ef1-4b2d-9246-3bf36e60687b",
+        destination: "https://mocki.io/v1",
+      },
+    ];
+  },
 };

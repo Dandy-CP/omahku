@@ -10,7 +10,7 @@ export function GetListHouse(
     queryKey: ["house"],
     queryFn: async () => {
       return await queryFetch({
-        url: "9d14be61-2ef1-4b2d-9246-3bf36e60687b",
+        url: "/9d14be61-2ef1-4b2d-9246-3bf36e60687b",
       });
     },
     ...options,

@@ -10,10 +10,10 @@ const HeroSection = () => {
           Estate Needs
         </h1>
 
-        <p className="font-normal text-center text-xl text-[#6E6F7C] mb-10 tablet:text-lg phone:text-sm phone:w-[320px]">
+        <p className="w-1/2 font-normal text-center text-xl text-gray mb-10 tablet:text-lg phone:text-sm phone:w-[320px] text-pretty">
           We have a wide range of properties available to suit any budget or
-          lifestyle. <br /> Our agents will work with you to find the perfect
-          home that meets all your needs and <br /> exceeds your expectations.
+          lifestyle. Our agents will work with you to find the perfect home that
+          meets all your needs and exceeds your expectations.
         </p>
 
         <div className="flex gap-5 phone:flex-col">

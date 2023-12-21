@@ -26,5 +26,15 @@ module.exports = {
 
     return config;
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "nos.wjv-1.neo.id",
+        port: "",
+        pathname: "/photo/test/**",
+      },
+    ],
+  },
   reactStrictMode: true,
 };

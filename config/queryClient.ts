@@ -4,7 +4,7 @@ import { QueryClient } from "@tanstack/react-query";
 import { QueryFetchOptions, ApiError } from "@/types/client.type";
 
 export const client = axios.create({
-  baseURL: "https:/mocki.io/v1",
+  baseURL: process.env.NEXT_PUBLIC_BASE_URL,
   timeout: 45000,
   headers: {
     Accept: "application/json",

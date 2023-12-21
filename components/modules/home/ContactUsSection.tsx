@@ -11,7 +11,8 @@ const ContactUsSection = () => {
 
       <p className="text-sm text-gray text-center mt-12">
         Contact us to schedule a consultation and learn how we can help you
-        achieve your real estate <br /> investment goals.
+        achieve your real estate <br className="phone:hidden" /> investment
+        goals.
       </p>
 
       <div className="flex flex-row items-center justify-center gap-5 mt-10 phone:flex-col">

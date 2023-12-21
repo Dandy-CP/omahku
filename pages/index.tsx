@@ -1,10 +1,24 @@
-import { HeroSection, SearchSection } from "@/components/modules/home";
+import React from "react";
+import {
+  HeroSection,
+  SearchSection,
+  TrustCompaniesSection,
+  FeatureSection,
+  FeaturedHouseSection,
+  TestimonialSection,
+  ContactUsSection,
+} from "@/components/modules/home";
 
 export default function Home() {
   return (
-    <div>
+    <React.Fragment>
       <HeroSection />
       <SearchSection />
-    </div>
+      <TrustCompaniesSection />
+      <FeatureSection />
+      <FeaturedHouseSection />
+      <TestimonialSection />
+      <ContactUsSection />
+    </React.Fragment>
   );
 }

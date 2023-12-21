@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import { Container, Button } from "../elements";
+import { Container, Button, HamburgerButton } from "../elements";
 import LogoOmahku from "@/public/SVG/logo-omahku.svg";
 import LogoOmahkuMobile from "@/public/SVG/logo-mobile.svg";
 
 const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
   const menu = [
     {
       label: "Buy House",
@@ -40,11 +42,7 @@ const Header = () => {
             <LogoOmahkuMobile />
           </div>
 
-          <div className="space-y-1.5 tablet:block phone:block laptop:hidden desktop:hidden large:hidden">
-            <span className="block h-0.5 w-8 bg-black"></span>
-            <span className="block h-0.5 w-8 bg-black"></span>
-            <span className="block h-0.5 w-8 bg-black"></span>
-          </div>
+          <HamburgerButton isShow={showMenu} setShow={setShowMenu} />
 
           <div className="flex flex-row gap-10 laptop:gap-5 tablet:hidden phone:hidden">
             {menu.map((value) => (
@@ -69,6 +67,25 @@ const Header = () => {
           </div>
         </div>
       </Container>
+
+      {showMenu && (
+        <div className="bg-white h-screen">
+          <div className="flex flex-col gap-10 p-7">
+            {menu.map((value) => (
+              <Link
+                key={value.label}
+                href={value.link}
+                className="text-xl font-semibold"
+                onClick={() => {
+                  setShowMenu(false);
+                }}
+              >
+                {value.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 };

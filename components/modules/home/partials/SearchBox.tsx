@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@/components/elements";
+import { Button, Card } from "@/components/elements";
 import LocationSVG from "@/public/SVG/icon/location.svg";
 import StyleHomeSVG from "@/public/SVG/icon/home.svg";
 import CoinSVG from "@/public/SVG/icon/dollarcircle.svg";
@@ -7,7 +7,10 @@ import SearchSVG from "@/public/SVG/icon/search.svg";
 
 const SearchBox = () => {
   return (
-    <div className="bg-white p-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] top-[-50px] h-[86px] w-2/3 rounded-md absolute">
+    <Card
+      withShadow
+      className="bg-white p-5 top-[-50px] w-2/3 rounded-md absolute"
+    >
       <div className="flex flex-row justify-between">
         <div className="flex flex-col justify-between">
           <div className="flex items-center gap-2">
@@ -51,7 +54,7 @@ const SearchBox = () => {
           </div>
         </Button>
       </div>
-    </div>
+    </Card>
   );
 };
 

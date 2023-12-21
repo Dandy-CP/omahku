@@ -6,10 +6,10 @@ import SearchBox from "./partials/SearchBox";
 
 const SearchSection = () => {
   return (
-    <Container className="py-40">
+    <Container className="mt-40">
       <div className="flex justify-center relative">
         <SearchBox />
-        <Image src={SearchImage} alt="" height={432} />
+        <Image src={SearchImage} alt="" height={432} priority />
       </div>
     </Container>
   );

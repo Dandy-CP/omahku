@@ -7,7 +7,7 @@ import SearchImageMobile from "@/public/PNG/searchImageMobile.png";
 
 const SearchSection = () => {
   return (
-    <Container className="mt-40 phone:mx-0">
+    <Container className="mt-40 phone:mx-0 phone:mt-0">
       <div className="flex justify-center relative phone:block">
         <SearchBox />
 

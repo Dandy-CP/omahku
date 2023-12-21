@@ -9,11 +9,11 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      phone: { min: "320px", max: "480px" },
+      phone: { min: "50px", max: "480px" },
       tablet: { min: "481px", max: "768px" },
       laptop: { min: "769px", max: "1024px" },
       desktop: { min: "1025px", max: "1280px" },
-      large: { min: "1281px", max: "1300px" },
+      large: { min: "1281px", max: "2560px" },
     },
     extend: {
       fontFamily: {
@@ -29,6 +29,7 @@ const config: Config = {
       },
       backgroundImage: {
         "contactus-pattern": "url('/contactUsPattern.svg')",
+        "contactus-pattern-mobile": "url('/contactUsMobile.svg')",
       },
     },
   },

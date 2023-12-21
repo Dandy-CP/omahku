@@ -19,12 +19,12 @@ const TestimonialSection = () => {
           </h1>
         </div>
 
-        <div>
-          <p className="text-gray text-base tablet:text-center tablet:mt-5 phone:w-[320px] phone:text-center phone:text-sm phone:mt-5">
+        <div className="w-1/2 tablet:w-full phone:w-[320px]">
+          <p className="text-gray text-base tablet:text-center tablet:mt-5 phone:w-[320px] phone:text-center phone:text-sm phone:mt-5 text-pretty">
             Whether you&apos;re buying, selling, or investing in real estate, we
-            have the expertise, <br className="tablet:hidden phone:hidden" />
-            resources, and <br className="tablet:hidden phone:hidden" /> more
-            about how we can help you with your real estate needs.
+            have the expertise, resources, and dedication to help you achieve
+            your goals. Contact us today to learn more about how we can help you
+            with your real estate needs.
           </p>
         </div>
       </div>

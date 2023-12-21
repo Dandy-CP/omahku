@@ -28,7 +28,7 @@ const Header = () => {
   ];
 
   return (
-    <Container>
+    <Container className="bg-white sticky top-0 z-50">
       <div className="py-7 flex flex-row items-center justify-between">
         <LogoOmahku />
 
@@ -46,7 +46,7 @@ const Header = () => {
 
         <div className="flex flex-row gap-5">
           <Button variant="plain" className="w-[100px] h-[48px]">
-            Log in
+            Log In
           </Button>
 
           <Button variant="default" className="w-[100px] h-[48px]">

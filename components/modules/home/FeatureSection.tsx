@@ -39,27 +39,31 @@ const FeatureSection = () => {
   ];
 
   return (
-    <Container className="my-28">
-      <div className="flex justify-between">
-        <div>
-          <Badge
-            label="Why Choose Omahku"
-            variant="default"
-            className="text-primary font-medium text-sm"
-          />
+    <Container className="my-28 phone:mx-3">
+      <div className="flex justify-between tablet:flex-col tablet:items-center phone:flex-col phone:items-center">
+        <div className="w-1/2 phone:w-auto">
+          <div className="tablet:flex tablet:justify-center phone:flex phone:justify-center">
+            <Badge
+              label="Why Choose Omahku"
+              variant="default"
+              className="text-primary font-medium text-sm"
+            />
+          </div>
 
-          <h1 className="text-4xl font-bold mt-10">
-            We are Committed to Providing <br /> Exceptional Service and Support
-            <br /> to All Our Clients.
+          <h1 className="text-4xl font-bold mt-10 tablet:text-2xl tablet:text-center phone:text-2xl phone:text-center phone:w-[320px]">
+            We are Committed to Providing
+            <br className="tablet:hidden phone:hidden" /> Exceptional Service
+            and Support <br className="tablet:hidden phone:hidden" /> to All Our
+            Clients.
           </h1>
 
-          <div className="flex flex-row gap-10 mt-16">
+          <div className="flex flex-row gap-10 mt-16 tablet:mb-16 phone:flex-col phone:items-center phone:mb-16">
             {valueFeature.map((value) => (
               <div key={value.label}>
-                <span className="text-3xl font-bold">
+                <p className="text-3xl font-bold phone:text-center">
                   {value.total}
                   <span className="text-primary">+</span>
-                </span>
+                </p>
                 <p className="text-gray text-base font-medium mt-3">
                   {value.label}
                 </p>
@@ -68,9 +72,9 @@ const FeatureSection = () => {
           </div>
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col w-1/2 phone:w-auto">
           {benefitFeature.map((value) => (
-            <Card key={value.label} className="mb-3 bg-blueSlate w-[601px] p-5">
+            <Card key={value.label} className="mb-3 bg-blueSlate w-full p-5">
               <div className="flex flex-row justify-between gap-3">
                 <div>
                   <value.icon />

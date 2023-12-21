@@ -37,18 +37,20 @@ const TrustCompaniesSection = () => {
   ];
 
   return (
-    <Container className="my-20 flex flex-col items-center">
-      <p className="text-gray font-medium mb-10">
-        Trusted by Multinational Companies
+    <Container className="my-20 flex flex-col items-center phone:mx-3">
+      <p className="text-gray font-medium mb-10 phone:text-center">
+        Trusted by{" "}
+        <br className="phone:block tablet:hidden laptop:hidden desktop:hidden large:hidden" />
+        Multinational Companies
       </p>
 
-      <div className="flex flex-row items-center gap-10">
+      <div className="flex flex-row items-center gap-10 tablet:flex-wrap tablet:justify-center phone:flex-wrap phone:justify-center">
         {company.map((value) => (
           <Image
             key={value.label}
             src={value.image}
             alt={value.label}
-            height={36}
+            className="h-[36px] w-1/2 object-cover laptop:h-[25px] tablet:h-1/6 tablet:w-1/6 phone:h-1/6 phone:w-1/6"
           />
         ))}
       </div>

@@ -71,8 +71,8 @@ const Footer = () => {
   ];
 
   return (
-    <div className="bg-dark h-96 px-20 py-20">
-      <div className="flex flex-row justify-between">
+    <div className="bg-dark h-96 px-20 py-20 tablet:h-auto phone:h-auto phone:px-10">
+      <div className="flex flex-row justify-between tablet:flex-col phone:flex-col">
         <div className="flex flex-col gap-5">
           <LogoOmahkuWhiteSVG />
           <p className="text-[#A0A2B6]">
@@ -82,8 +82,8 @@ const Footer = () => {
           <p className="text-white">omahku@creative.com</p>
         </div>
 
-        <div>
-          <p className="text-[#A0A2B6] mb-7">Our Service</p>
+        <div className="tablet:mt-5 phone:mt-5">
+          <p className="text-[#A0A2B6] mb-5">Our Service</p>
 
           <div className="flex flex-col gap-3">
             {ourService.map((value) => (
@@ -94,8 +94,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div>
-          <p className="text-[#A0A2B6] mb-7">About Us</p>
+        <div className="tablet:mt-5 phone:mt-5">
+          <p className="text-[#A0A2B6] mb-5">About Us</p>
 
           <div className="flex flex-col gap-3">
             {aboutUs.map((value) => (
@@ -106,8 +106,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div>
-          <p className="text-[#A0A2B6] mb-7">More</p>
+        <div className="tablet:mt-5 phone:mt-5">
+          <p className="text-[#A0A2B6] mb-5">More</p>
 
           <div className="flex flex-col gap-3">
             {more.map((value) => (
@@ -118,8 +118,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div>
-          <p className="text-white mb-7">Follow Us</p>
+        <div className="tablet:mt-5 phone:mt-5">
+          <p className="text-white mb-5">Follow Us</p>
 
           <div className="flex flex-row items-center gap-3">
             {followUs.map((value, index) => (

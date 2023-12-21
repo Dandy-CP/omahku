@@ -9,7 +9,7 @@ const SearchBox = () => {
   return (
     <Card
       withShadow
-      className="bg-white p-5 top-[-50px] w-2/3 rounded-md absolute"
+      className="bg-white p-5 top-[-50px] w-2/3 rounded-md absolute laptop:w-4/5 tablet:w-full phone:hidden"
     >
       <div className="flex flex-row justify-between">
         <div className="flex flex-col justify-between">
@@ -20,7 +20,9 @@ const SearchBox = () => {
             </span>
           </div>
 
-          <p className="text-xl font-medium">Semarang, Indonesia</p>
+          <p className="text-xl font-medium tablet:text-base">
+            Semarang, Indonesia
+          </p>
         </div>
 
         <div className="border border-[#EBECF5]" />
@@ -31,7 +33,7 @@ const SearchBox = () => {
             <span className="text-[14px] text-[#9496A5] font-thin">Style</span>
           </div>
 
-          <p className="text-xl font-medium">Scandinavian</p>
+          <p className="text-xl font-medium tablet:text-base">Scandinavian</p>
         </div>
 
         <div className="border border-[#EBECF5]" />
@@ -44,7 +46,9 @@ const SearchBox = () => {
             </span>
           </div>
 
-          <p className="text-xl font-medium">$50.000 - $60.000</p>
+          <p className="text-xl font-medium tablet:text-base">
+            $50.000 - $60.000
+          </p>
         </div>
 
         <Button variant="default" className="w-[120px]">

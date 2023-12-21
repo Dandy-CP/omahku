@@ -11,7 +11,7 @@ export type DivProps = React.DetailedHTMLProps<
 const Container = forwardRef<Ref, DivProps>((props, ref) => {
   const { className, children, ...rest } = props;
 
-  const classNameValue = clsx("mx-20", className);
+  const classNameValue = clsx("mx-20 laptop:mx-5 tablet:mx-5", className);
 
   return (
     <div ref={ref} className={classNameValue} {...rest}>
